@@ -47,12 +47,6 @@ public:
 		: name(user_name)
 	{
 	}
-	template <class Container>
-	User(const string &user_name, const Container &recipes)
-		: name(user_name)
-		, recipes(begin(recipes), end(recipes))
-	{
-	}
 	void set_name(const string &n)
 	{
 		name = n;
