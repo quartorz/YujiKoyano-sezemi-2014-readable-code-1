@@ -1,8 +1,10 @@
-#include <iostream>
+#include <fstream>
 using namespace std;
  
 int main(){
-    
-	cout << "オムライス" << endl;
+  
+	ofstream fs1("recipe-data.txt");
+    fs1 << "オムライス" << endl;
+    return 0 ;
 
 }
