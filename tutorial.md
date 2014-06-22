@@ -5,4 +5,7 @@ tutorial
 
 terminalにて a.out hoge.txt を 実行
 hoge.txt からテキストを読み込み
-recipe-data-with-id.txt として結果を出力
+
+レシピ情報
+
+各行にレシピ名とURLを空白区切りで記述する
