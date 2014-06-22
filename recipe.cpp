@@ -5,7 +5,7 @@ using namespace std;
  
 int main(int argc, char *argv[]){
   
-	ifstream inStream("recipe-data.txt");
+	ifstream inStream(argv[1]);
   	string inputText[3],fileText;;
   	int lineCounter = 0;
 
