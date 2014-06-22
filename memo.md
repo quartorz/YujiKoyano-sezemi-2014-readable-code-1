@@ -10,4 +10,5 @@ recipe : 7
 
 recipe : 8
 ユーザーをクラスで管理するようにした。
-operator<<(std::ostream&,const Recipe &)を作ってレシピの出力を簡単にできるようにした
+operator<<(std::ostream&,const Recipe &)を作ってレシピの出力を簡単にできるようにした。
+構造体とクラスをヘッダファイルに移した。
