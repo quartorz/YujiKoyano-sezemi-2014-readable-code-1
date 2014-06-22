@@ -1,3 +1,4 @@
+
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -17,9 +18,14 @@ int main(int argc, char *argv[]){
   	inStream.close();
 
 	ofstream outStream("recipe-data-with-id.txt");
-	for(int id = 0; id < 3 ; id++){
-		outStream << id+1 << ": " << inputText[id] << endl;
-	}
+  if(argc < 3){
+  	for(int id = 0; id < 3 ; id++){
+  		outStream << id+1 << ": " << inputText[id] << endl;
+  	}
+  }else{
+    int id = std::atoi(argv[2]) - 1;
+    outStream << id+1 << ": " << inputText[id] << endl;
+  }
     
     return 0 ;
 }
